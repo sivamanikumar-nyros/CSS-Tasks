@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+
+            </title>
+            <style type="text/css">
+                    .hidden{
+                        background-color: green;
+                        width: 200px;
+                        height: 90px;
+                        overflow: hidden;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+
+                    }
+                    
+
+                    .auto{
+                        background-color:green;
+                        width: 160px;
+                        height: 110px;
+                        overflow: auto;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                    }
+
+                    .scroll{
+                        background-color:green;
+                        width: 160px;
+                        height: 110px;
+                        overflow: scroll;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                    }
+                    .visible{
+                        background-color:green;
+                        width: 160px;
+                        height: 110px;
+                        overflow: visible;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                    }
+                    div.relative {
+                        position: relative;
+                        width: 400px;
+                        height: 200px;
+                        border: 3px solid #73AD21;
+                    } 
+                    div.static {
+                        position: static;
+                        border: 3px solid #73AD21;
+                    }
+                    div.absolute {
+                        position: absolute;
+                        top: 80px;
+                        right: 0;
+                        width: 200px;
+                        height: 100px;
+                        border: 3px solid #73AD21;
+                    }
+                    div.fixed {
+                        position: fixed;
+                        bottom: 0;
+                        right: 0;
+                        width: 300px;
+                        border: 3px solid #73AD21;
+                    }
+            </style>
+
+        </head>
+        <body>
+            <hr><h1 style="text-align:center;background-color: black;color: white;">The overflow property</h1><hr>
+
+            <h2 style="text-align:center;">Overflow hidden:</h2>
+            <div class="hidden">
+                When we use overflow as visible .The overflow is not clipped it renders  outside the elements box this is default one The overflow property works only for block elements  with a specified height.
+            </div>
+
+            <hr><h2 style="text-align:center;background-color: black;color: white;">Overflow scroll:</h2></hr>
+            <div class="scroll">
+                When we use overflow as visible .The overflow is not clipped it renders  outside the elements box this is default one The overflow property works only for block elements  with a specified height.
+            </div>
+
+            <hr><h2 style="text-align:center;background-color: black;color: white;">Overflow auto:</h2><hr>
+            <div class="auto">
+                When we use overflow as auto the overflow is clipped  and a scrollbar is added to see the rest of the content this is default one The overflow property works only for block elements  with a specified height.
+            </div>
+
+            <hr><h2 style="text-align:center;background-color: black;color: white;">Overflow visible:</h2><hr>
+            <div class="visible">
+                When we use overflow as visible .The overflow is not clipped it renders  outside the elements box this is default one The overflow property works only for block elements  with a specified height.
+            </div><br><br><hr><h1 style="text-align:center;background-color: black;color: white;">CSS Position Property</h1><hr>
+
+                <h1 style="background-color:black;color:white;">position:static,absolute,relative,fixed</h1>
+                <hr>
+                    <div class="relative">This div element has position: relative;
+                        <div class="static">
+                            This div element has position: static;
+                                <div class="absolute">This div element has position: absolute;
+                                    <div class="fixed">This div element has position:fixed;
+                                    </div>
+                                </div>  
+                        </div>
+                    </div>
+                    <br>
+
+
+
+
+
+        </body>
+    </html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+				<style>
+					a.Hover:hover {
+    						color:black;
+    						background-color: gold;
+    						display:inline-block;
+					}
+					input:focus {
+    						background-color: grey;
+					}
+					.nav li a.active{
+
+							background-color:lightblue;
+							color:black;
+					}
+					li a:visited {
+    					color:red;
+					}
+					
+					p:only-child {
+    					background: red;
+					}
+					.nth-child p:nth-child(3) {
+    							background: black;
+    							color: white;
+					}
+
+
+					.nth-of-type p:nth-of-type(1) {
+    									background:brown;
+    									color: white;
+					}
+					.lastchild p:last-child{
+								background: gold;
+					}
+					.firstchild p:last-child{
+								background: blue;
+								color: white;
+					}
+					.odd p:nth-of-type(odd){
+						background-color: tomato;
+					}
+					.odd p:nth-of-type(even){
+						background-color: grey;
+					}
+
+					
+					hr{
+						border:3px solid green; 
+					}
+
+
+
+					
+					 
+				</style>
+		</head>
+		
+		<body>
+			<h1 style="background-color: black;color:white;text-align: center;">Pseudo Classes</h1>
+			<h2>hover:</h2>
+			<h2><a class="Hover" href="#">Hover</a></h2>
+			<hr>
+			<h2>focus:</h2>
+			<p>Click inside the text fields to see a grey background:</p>
+			
+			<form>
+				First name: <input type="text" name="firstname"><br><br>
+				Last name: <input type="text" name="lastname">
+			</form>
+			<hr>
+			<h2>active:</h2>
+			<div class="nav">
+				<ul>
+					<li><a class="active"href="CSS-Task-9.html">Home</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
+			</div>
+				<hr>
+				<h2>visited:</h2>
+					<a href="#">Home</a><br>
+					<a href="#">Services</a><br>
+					<a href="#">Contact</a>
+					<hr>
+				<h2>first-child:</h2>
+				<div class="firstchild">
+					<p>This paragraph is the first child of its parent (body).</p>
+				</div>
+				<h1>Welcome to My Homepage</h1>
+			
+				<p>This paragraph is not the first child of its parent.</p>
+
+				<div>
+  					<p>This paragraph is the first child of its parent (div).</p>
+  					<p>This is last-child.</p>
+				</div>
+				<hr>
+				<h2>last-child:</h2>
+					<p>This paragraph is the last child of its parent (body).</p>
+		
+
+				<h1>Welcome to My Homepage</h1>
+					<p>This paragraph is not the last child of its parent.</p>
+
+				<div class="lastchild">
+  					<p>This paragraph is not the last child of its parent (div).</p>
+  					<p>This paragraph is the last child of its parent.</p>
+				</div>
+				<hr>
+				<h2>only-child:</h2>
+					<div><p>This is only a child paragraph.</p></div>
+
+					<div><span>This is a span.</span><p>This is a paragraph.</p></div>
+				<hr>
+				<h2>nth-child</h2>
+		
+				<div class="nth-child">
+					<p>This is some paragraph</p>
+					<p>This is some paragraph.</p>
+					<p>This is a nth child paragraph.</p>
+				</div>
+				<hr>
+				<h2>nth-of-type</h2>
+					<div class="nth-of-type">
+						<p>This is first text.</p>
+						<p>This is second text.</p>
+						<p>This is third text.</p>
+						<p>This is fourth text.</p>
+					</div>
+					<hr>
+						<h2>nth-of-type(odd and even)</h2>
+						<div class="odd">
+							<p>HTML5</p>
+							<p>CSS3</p>
+							<p>Javascript</p>
+							<p>Jquery</p>
+							<p>Bootstrap</p>
+							<p>Sql</p>
+							<p>Ruby</p>
+						</div>
+						
+		</body>
+	</html>
+
+
+
+
+
+
+		
+
+		

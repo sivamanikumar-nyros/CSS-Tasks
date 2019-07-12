@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>CSS-Task-7</title>
+			<style type="text/css">
+				
+				body{
+					
+					background-color: grey;
+				}
+				.pa{
+					
+					padding: 5px;
+					/*this value is applied in 4 sides.*/
+					border:2px solid black;
+					/*three values are applied */
+					background-color: green;
+				}
+				.pad{	
+					
+					padding:5px 4px 3px 2px;
+					/*the above 4 sides of values
+					1.padding left
+					2.padding top
+					3.padding right
+					4.padding bottom*/
+
+					border-top-width:5px;
+					border-right-width:4px;
+					border-bottom-width:4px;
+					border-left-width:2px;
+					/*border 4 side values*/
+
+					border-top-color: red;
+					border-right-color:lightblue;
+					border-bottom-color:blue;
+					border-left-color: black;
+					/*border color 4 sides values*/
+
+					border-top-style: solid;
+					border-right-style: double;
+					border-bottom-style: groove;
+					border-left-style: dashed;
+					/*border styles in 4 sides*/
+
+
+				}
+				div.relative {
+    						  position: relative;
+    							width: 400px;
+    							height: 200px;
+    							border: 3px solid #73AD21;
+    							margin: 0 0 25px 0;
+    							padding:5px 4px 3px 2px;
+    							margin: 0 25px 0 0;
+				} 
+
+				div.absolute {
+    				position: absolute;
+    				top: 80px;
+    				right: 0;
+    				width: 200px;
+    				height: 100px;
+    				border: 3px solid #73AD21;
+    				margin: 0 25px 0 0;
+				}
+				h1 {
+  					margin: 0 0 25px 0;
+  					background: #cfc;
+				}
+				.margin {
+  					margin: 50px 0 0 0;
+  					background: #cf9;
+				}
+				img {
+					float:right; /*or left;*/
+					margin: 50px 0 0 0; 
+				}
+				.img1{
+					float:left; /*or right;*/
+					margin: 0 50px 0 0; 
+				}
+				.float{
+					float:left;
+					margin: 30px 0 0 0;
+				}
+				p{
+					color:red;
+				}
+				p{
+					color:blue;
+				} 
+
+
+			</style>
+		</head>
+		<body>
+
+			<h1>specificity</h1>
+			<p>
+            	If two selectors apply to the same element, the one with higher specificity wins. 
+				There are four distinct categories which define the specificity level of a given selector: inline styles, IDs, classes, attributes, and elements. 
+
+        	</p>
+        	<br><br><hr><hr>
+			<h1>margin collapse</h1>
+				<p class="margin">The collapsing margins means that adjoining margins 
+				(no non-empty content, padding, or border areas, or clearance separate them) of  two or more boxes (which may be next to one another or nested) combine to form a single margin.for example, one element has a 25px bottom margin and the element immediately underneath it has a 20px top margin, only the 25px bottom margin will be enforced</p>
+				<br><br><hr><hr>
+			<h2>padding or border</h2>
+			<p class="pa">The collapsing margins means that adjoining margins 
+				(no non-empty content, padding, or border areas, or clearance separate them) of  two or more boxes (which may be next to one another or nested) combine to form a single margin.</p>
+
+				<p class="pad">A collapsed margin is considered adjoining to another margin if any of its component margins is adjoining to that margin.</p><br><br><hr><hr>
+
+				<h2>position:relative or absolute</h2>
+
+				<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+				<div class="relative">This div element has position: relative;
+  					<div class="absolute">This div element has position: absolute;
+  					</div>
+				</div><br><br><hr><hr>
+				<h2>float:left or right</h2>
+				<p class="float">
+					The float CSS property specifies that an element should be placed along the left or right side of its container, allowing text and inline elements to wrap around it.
+				</p>
+				<img src="333.png" alt=" Lord budda" height="200px" width="200px">
+				<br><br>
+				<div class="img1">
+					<img src="333.png" alt=" Lord budda" height="200px" width="200px">
+				</div>
+		</body>
+	</html>
+
+
+				
+				
+
+				
+ 
+			
+		

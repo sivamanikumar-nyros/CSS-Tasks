@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+
+                <style>
+                        .siva {
+                            background-color: black;
+                            color: white;
+                        }
+        
+                        .sidenav {
+                            width: 200px;
+                            padding-right: 5px;
+                            z-index: 1;
+                            top: 20px;
+                            left: 10px;
+                            background: #7b7cc6;
+                            overflow-x: hidden;
+                            border: 3px solid black;
+                            padding-left: 5px;
+                            float: right;
+                        }
+        
+                        .sidenav a {
+                            padding: 6px 8px 6px 16px;
+                            text-decoration: none;
+                            font-size: 25px;
+                            color: white;
+                            display: block;
+                        }
+        
+                        .sidenav a:hover {
+                                    color: gold;
+                        }
+        
+                        #rcorners1 {
+                                border-radius: 25px;
+                                background: black;
+                                color: white;
+                                padding: 20px;
+                                width: 160px;
+                                height: 120px;
+                        }
+        
+                        #rcorners2 {
+                                border-radius: 25px;
+                                background: black;
+                                color: white;
+                                padding: 20px;
+                                width: 160px;
+                                height: 220px;
+                        }
+        
+                        #rcorners3 {
+                                border-radius: 25px;
+                                background: black;
+                                color: white;
+                                padding: 20px;
+                                width: 160px;
+                                height: 250px;
+                        }
+        
+                        .main {
+                            font-size: 28px;
+                            padding: 0px 10px;
+                        }
+        
+                        @media screen and (max-height: 500px) {
+                                                .sidenav {
+                                                    padding-top: 15px;
+                                                }
+                                                .sidenav a {
+                                                    font-size: 18px;
+                                                }
+                        }
+        
+                        .pagination a {
+                                color: black;
+                                float: left;
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                transition: background-color .3s;
+                        }
+        
+                        .pagination a.active {
+                                    background-color: dodgerblue;
+                                    color: white;
+                        }
+        
+                        .pagination a:hover:not(.active) {
+                                            background-color: #ddd;
+                        }
+        
+                        .sidenav a:hover .tooltiptext {
+                                        visibility: visible;
+                                        .pointer {
+                                            cursor: pointer;
+                                        }
+                        }
+        
+                        .sidenav .tooltiptext {
+                                    visibility: hidden;
+                                    width: 150px;
+                                    background-color: lightblue;
+                                    color: white;
+                                    text-align: center;
+                                    border-radius: 6px;
+                                    padding: 5px 0;
+                                    position: absolute;
+                                    z-index: 1;
+                        }
+                </style>
+            </head>
+
+            <body>
+                <h1>Welcome To Webtutorials....</h1>
+                <div class="sidenav">
+                    <a href="#">Home</a>
+                    
+                    <p id="rcorners1">This website explains the step by step through the process of setting up your own website.</p>
+                    <br>
+                    <hr style="border-width: 3px;border-color: black;">
+                    <br>
+                    <a href="#"><span class="2">Services</span></a>
+                    <p id="rcorners3">Software as a service (SaaS) is a software distribution model in which a third-party provider hosts applications and makes them available to customers over the Internet. .</p>
+                    <br>
+                    <hr style="border-width: 3px;border-color: black;">
+                    <br>
+                    <a href="#"><span class="3">Contact</span></a>
+                    <p id="rcorners1">Contact is a meeting or touching of people or things..</p>
+                    <br>
+                    <hr style="border-width: 3px;border-color: black;">
+                    <br>
+                    <a href="#"><span class="4">About us</span></a>
+                    <p id="rcorners2">Is a consulting company which provides a range of advisory and facilitation services in the application of technology in the workplace, in the management of change and in leadership within organizations..</p>
+                    <br>
+                    <hr style="border-width: 3px;border-color: black;">
+                    <br>
+                </div>
+                <br>
+
+                <div class="main">
+                <h2><span class="siva">Learning Objectives...</span></h2>
+
+                <br> * The Internet and the World Wide Web
+                <br> * History of the Internet and the WWW
+                <br> * Transmission Across the Internet
+                <br> * TCP/IP and Domain Names
+                <br> * Basic Services from FTP to the WWW
+                <br> * Uniform Resource Locators (URLs)
+                <br> * Intranets and Extranets</p>
+                <br>
+
+                <p>
+                    <span class="siva">How do we use the Internet?..</span>
+                    <br> * Email
+                    <br> * WWW, hypertext, browsers
+                    <br> * RSS
+                    <br> * FTP, P2P file distribution
+                    <br> * Mobile Internet
+                    <br> * IM, IRC, Skype
+                    <br> * Blogging, microblogging
+                    <br> *Gaming
+                    <br> *Learning
+                    <br> *Video Conferencing
+                    <br> *Remote Backup
+                    <br> *Streaming video and audio
+                    <br> *Collaboration-Participation (Wiki)
+                    <br>
+                </p>
+
+                <div class="sivamani">
+                    <img src="20.jpg" height=200px>
+                    <img src="21.jpg" height=200px>
+
+                </div>
+                <p><span class="siva">Browsers:</span>
+                    <br> * An application that provides a way to look at and interact with the information on the World Wide Web.
+                    <br> * It retrieves, presents, and traverses information resources.
+                    <br> * These include web pages, images, video, and other multimedia content.
+                </p>
+
+                <hr style="border-width: 3px;border-color: black;">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+                <br>
+                <br>
+                    <hr style="border-width: 3px;border-color: black;">
+                    <footer>&#9400 Copy Rights Reserved by web.com</footer>
+            </body>
+    </html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+		<style>
+			.snowmobile li {
+				background: url(snowmobile.jpg);
+				height: 300px;
+				width: 400px;
+			}
+			h1 {
+				background: url(snowmobile2.jpg);
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				color: white;
+			}
+			.myImg {
+    			background:url(snowmobile2.jpg) 0 0 no-repeat;
+    			display:block;
+    			height:300px;
+    			text-indent:-99999em;
+    			width:600px; 
+    			overflow:hidden;
+			}
+			
+			
+			.square{
+				background:url(snowmobile2.jpg) no-repeat;
+				height: 150px;
+				width: 150px;
+				background-size: 150px 150px;
+				border:2px solid black;
+			}
+			.Img {
+  				background:url(hd.png) ;/*0 0 no-repeat;*/
+    			display:block;
+    			height:250px; /* your image height */
+  				/*text-indent:-99999em;*/
+  				width:300px; /* your image width */
+    			overflow:hidden;
+    			color: black;
+			}
+			.Img1 {
+  				background:url(hd.png) ;/*0 0 no-repeat;*/
+    			display:block;
+    			height:250px; /* your image height */
+  				text-indent:-99999em;
+  				width:300px; /* your image width */
+    			overflow:hidden;
+    			color: black;
+			}
+			
+
+			.container {
+  				position: relative;
+  				width: 50%;
+			}
+
+			.image {
+  				display: block;
+  				width: 100%;
+  				height: auto;
+			}
+
+			.overlay {
+  				position: absolute;
+  				top: 0;
+  				bottom: 0;
+  				left: 0;
+  				right: 0;
+  				height: 100%;
+  				width: 100%;
+  				opacity: 0;
+  				transition: .5s ease;
+  				background-color: gold;
+			}
+
+			.container:hover .overlay {
+  								opacity: 1;
+			}
+
+			.text {
+  				color:blue;
+  				font-size: 20px;
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+			#home {
+    width: 46px;
+    height: 44px;
+    background: url(home2.png) 0 0;
+}
+
+#next {
+    width: 43px;
+    height: 44px;
+    background: url(location.png) -91px 0;
+}
+
+			
+
+
+
+
+
+		</style>
+		</head>
+		<body>
+			<h2>Content should be marked up as inline images</h2>
+				<h3>Snowfall</h3>
+					<ul>
+						<li><img src="snowmobile.jpg" alt="Snowmobile" /></li>  
+					</ul>
+
+    					<h2>Layout elements should be defined as background images</h2>
+
+			<h1>Feel the rhythm, feel the rhyme, get on up it's
+				bobsled time!</h1>
+
+				<div class="myImg">This is the text</div>
+				<hr><hr>
+				<h2>Image Cropping in square shape</h2>
+					
+						
+			<div class="square">
+			</div>
+			<br><hr><hr>
+
+			<h2>Add descriptive text to image-replaced elements</h2>
+			<div class="Img">The Lord Budda</div>
+			<h2>Text-indent hides the placeholder text</h2>
+			<div class="Img1">The Lord Budda</div><hr style="border:3px solid black">
+			
+			<h2 style="margin-left: 18%">Image replaced with text </h2>
+			<div class="container">
+  				<img src="hd.png" alt="Avatar" class="image">
+  				<div class="overlay">
+    				<div class="text">The Lord Budda</div>
+  				</div>
+			</div>
+
+			<br><hr><hr>
+			<h2>sprites</h2>
+
+			<img id="home" src="home2.png">
+			<img id="next" src="location.png">
+
+
+
+			
+
+
+		</body>
+	</html>
+
+
+  
+
+

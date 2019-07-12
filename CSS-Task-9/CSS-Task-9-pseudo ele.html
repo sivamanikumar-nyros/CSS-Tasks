@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<html>
+		<head>Pseudo Elements</head>
+			<style type="text/css">
+				.firstline p::first-line {
+    						color:brown;
+    						font-variant:small-caps;
+				}
+				.first-letter::first-letter{
+									color: brown;
+							font-size: xx-large;
+				}
+				.before h2::before{
+					content: url(hd.png);
+					width: 5px;
+				    height: 5px;
+				}
+				.after h2::after{
+					content: url(hd.png);
+							width: 2px 2p;
+							height:2px;
+				}
+				
+				hr{
+						border:3px solid green; 
+					}
+
+			</style>
+
+			<body>
+
+				<hr><h1 style="background-color: black;color:white;text-align: center;">Pseudo Elements</h1>
+				<hr>
+				<h1 style="background-color:green;color:white;text-align: center;">Before:</h1>
+				<div class="before">
+					<h2>This is a lord budda pic in png format</h2>
+					<p>The before pseudo-element inserts content before the content of an element.</p>
+
+				</div>
+				<hr>
+					<h1 style="background-color:green;color:white;text-align: center;">After:</h1>
+					<div class="after">
+						<h2>This is a lord budda pic in png format</h2>
+						<p>The after pseudo-element inserts content after the content of an element.</p>
+					</div><hr>
+					<div class="first-letter">
+				<h1 style="background-color:green;color:white;text-align: center;">First-letter</h1>
+				<p class="first-letter">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+				
+					<hr>
+					<h1 style="background-color:green;color:white;text-align: center;">first-line</h1>
+				<div class="firstline">
+					<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more,first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, </p>
+				</div>
+				
+			</body>
+	</html>

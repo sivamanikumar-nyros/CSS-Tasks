@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>CSS based drop-down menu</title> 
+                <style type="text/css">
+
+                    header{
+                    padding-bottom: 20px;
+                    padding-top: 10px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    text-align: center;
+                    background-color: #cc4518;
+                }
+
+                ul{
+                    margin:0px;
+                    padding:0px;
+                    list-style-type: none;
+                    font-weight:100px; 
+                }
+                ul li a{
+                    text-decoration: none;
+                    color:white;
+                    display:block;
+                }
+                ul li{
+                    float:left;
+                    width:150px;
+                    height:40px;
+                    background-color:#8B0000;
+                    font-size: 20px;
+                    line-height: 40px;
+                    text-align:center;
+                    opacity: .8;
+                    border:2px solid black;
+                    font-weight: bold; 
+                }
+                ul li a:hover{
+                    background-color: #9842f4;
+
+                }
+                body{
+                    background-color: #f4a641;
+                    
+                }
+                ul li ul li{
+                    display:none;
+                }
+                ul li:hover ul li{
+                    display:block;
+                    background-color:black;
+                }
+                nav{
+                    float:right;
+                    padding-right: 5px;
+                    margin-left:65px;
+                    marker-bottom:10px;
+                }
+                
+                
+                
+                </style>        
+        </head>
+        <body>
+
+            <header>
+                <hgroup>
+                    <h1>CSS-Task-9</h1>
+                    <h2>Pseudo classes & Pseudo elements</h2>
+                </hgroup>
+
+
+            </header>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pseudo Classes</a>
+                        <ul>
+                            <li><a href="hover.html">Hover</a></li>
+                            <li><a href="focus.html">Focus</a></li>
+                            <li><a href="active.html">Active</a></li>
+                            <li><a href="visited.html">Visited</a></li>
+                            <li><a href="first-child.html">First-child</a></li>
+                            <li><a href="last-child.html">Last-child</a></li>
+                            <li><a href="only-child.html">Only-child</a></li>
+                            <li><a href="nth-child().html">nth-child()</a></li>
+                            <li><a href="nth-of-type().html">nth-of-type()</a></li>    
+                        </ul>
+                    </li>
+                    <li><a href="#">Pseudo Elements</a>
+                        <ul>
+                            
+                            <li><a href="#">Inox</a></li>
+                            <li><a href="#">Anand Complex</a></li>
+                            <li><a href="#">Devi Multiplex</a></li>
+                            <li><a href="#">c & c</a></li>
+                            <li><a href="#">Mayuri</a></li>
+
+                        </ul>
+
+
+                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            
+    </body>
+</html>

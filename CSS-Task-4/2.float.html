@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+         <title>
+         font clearing methods 
+         </title>
+         <style>
+               img {
+                  float: left;
+               }
+
+               p.clear {
+                  clear: both;
+               }
+               div {
+                  border: 3px solid black;
+                  padding: 5px;
+               }
+
+               .img1 {
+                     float: right;
+               }
+
+               .clearfix:after {
+                           content: "";
+                           clear: both;
+                           display:table;
+               }
+
+               .img2 {
+                     float: right;
+               }
+               .clearfix1 {
+                     overflow: auto;
+               }
+
+               .img3 {
+                     float: right;
+               }
+               h1{
+                  text-align:center;
+                  background-color:green;
+                  color: white;
+               }
+               span{
+                  background-color: black;
+                  color:white;
+               }
+         </style>
+      </head>
+      <body>
+         <h1>Float clearning methods</h1>
+         <h2><span>Clear property:</span></h2>
+            <img src="quote3.jpg" width="100" height="132" >
+            <p>The CSS clear property defines what elements can float beside the cleared element and on which side..</p>
+            <p class="clear">The CSS clear property defines what elements can float beside the cleared element and on which side..</p>
+            <hr><hr>
+            <h2><span>Without clearfix:</span></h2>
+            <div>
+               <img src="quote3.jpg" width="100" height="130" class="img2">The CSS clear property defines what elements can float beside the cleared element and on which side..
+            </div><br><br><br><br><br><br><br><hr><hr>>
+            <h2><span>Add clearfix to solve this problem:</span></h2>
+            <h2><span>After clear fix:</span></h2>
+            <div class="clearfix1">
+               <img src="quote3.jpg" width="100" height="130">The CSS clear property defines what elements can float beside the cleared element and on which side..
+            </div>
+            <hr><hr>
+            <h2><span>Using overflow method:</span></h2>
+            <div class="clearfix1">
+               <img class="img3" src="quote3.jpg" alt="Pineapple" width="170" height="170">
+               The CSS clear property defines what elements can float beside the cleared element and on which side.. 
+            </div>
+      </body>
+</html>

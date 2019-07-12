@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+	<html>
+		<style>
+			#article p,h6 {
+				font-family:arial;
+				color:red;
+				font-size: 12px;
+			}
+			h1{
+				text-align: center;
+				background-color: black;
+				color: white;
+			}
+			
+			.submit {
+				border: 1px solid #000; 
+				cursor: pointer; 
+				text-transform: uppercase; 
+			} 
+
+			.next_button {
+				border: 1px solid #000; 
+				cursor: pointer; 
+				text-transform: uppercase; 
+			}
+			.button {
+				 border: 1px solid #000; 
+				 cursor: pointer; 
+				 text-transform: uppercase; 
+			}
+			.button { 
+				background: #fff; 
+				border: 1px solid #000; 
+				color: #333; 
+				cursor: pointer; 
+			}
+			.button { 
+				background: #fff; 
+				border: 1px solid #000; 
+				color: #333; 
+				cursor: pointer; 
+			}
+    		.submit { 
+    			background: #555; 
+    		}
+    		.siva p,h2 {
+					
+						font: italic bold 16px/18px sans-serif;
+						color:blue;
+						border:3px solid #ccc;
+						background: #000 url(bgm.jpg) no-repeat center top;
+						padding:5px 2px 0px 3px;
+						list-style: disc inside none;
+						margin-top: 15px; margin-left: 20px; margin-right: 10px; margin-bottom: 0;    
+					} 
+
+
+		</style>
+
+		<body>
+			<hr><h1>Selector combination</h1><hr>
+			<div id="article">
+
+    			<h6>Hello siva</h6>
+					<p>Welcome To Webclass</p>
+			</div>
+
+			<p>Hey..What happend</p>
+			<hr><h1>Selector abstraction</h1><hr>
+				
+				<input type="submit" class="submit" /> 
+				<a href="next_page.html" class="next_button" >Next</a>
+
+				<hr><h1>DRY this up by abstracting the CSS declarations into one class</h1><hr>
+
+				<input type="submit" class="button" /> 
+				<a href="next_page.html" class="button">Next</a>
+
+				<hr><h1>What if the buttons are only mostly the same?</h1><hr>
+
+				<input type="submit" class="button" /> 
+				<a href="next_page.html" class="button">Next</a>
+
+
+				<hr><h1> buttons class</h1><hr>
+
+				 <input type="submit” class="button submit" /> 
+     			 <a href="next_page.html" class="button">Next</a>
+
+				<hr><h1>Style shorthand</h1><hr>
+
+				<div class="siva">
+						<hr style="border-width: 3px;border-color: black;">
+					<h2>Introduction</h2>
+						<p>Welcome !</p>
+						<p>Established in 2018, Web Technologies has been serving as a promoter of businesses for over a decade. We offer high quality professional Web Design and Hosting Services at affordable prices to companies and inividuals. With our expertise, you can be sure your website is in good hands.</p>
+				</div>
+				<br><br><br><hr style="border-width: 3px;border-color: black;">
+
+
+
+		</body>
+	</html>         
+
+
+
+
+

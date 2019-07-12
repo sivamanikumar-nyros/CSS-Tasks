@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        p {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        
+        .siva {
+            width: 100px;
+            height: 100px;
+            float: right;
+        }
+        
+        .mani {
+            width: 100px;
+            height: 100px;
+            float: none;
+        }
+        
+        p#red {
+            background-color: red;
+        }
+        
+        p#blue {
+            background-color: blue;
+        }
+        
+        p#green {
+            background-color: green;
+        }
+        
+        div.relative {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+        
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+        
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="background-color:green;color:white;text-align: center;"> Floating Left/Right/None options & their stacking order.</h1>
+    <hr>
+    <h1 style="background-color: black;color: white;">Float:left</h1>
+    <hr>
+    <p id="red">This is a paragraph</p>
+    <p id="blue">This is a paragraph</p>
+    <p id="green">This is a paragraph</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <hr>
+
+    <h1 style="text-align: center;margin-left: 1000px;background-color: black;color: white;">Float:right</h1>
+    <hr>
+    <div class="siva">
+        <p id="red">This is a paragraph</p>
+        <p id="blue">This is a paragraph</p>
+        <p id="green">This is a paragraph</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h1 style="background-color: black;color: white;">Float:none</h1>
+    <hr>
+
+    <div class="mani">
+        <p id="red">This is a paragraph</p>
+        <p id="blue">This is a paragraph</p>
+        <p id="green">This is a paragraph</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h1 style="background-color: black;color: white;">position:absolute,relative,fixed</h1>
+    <hr>
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;
+            <div class="fixed">This div element has position:fixed;
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
